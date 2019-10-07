@@ -1,0 +1,23 @@
+{
+  "name": "iformprojekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchsass": "node-sass --output-style expanded main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuliarotaru/iFORM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iuliarotaru/iFORM/issues"
+  },
+  "homepage": "https://github.com/iuliarotaru/iFORM#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

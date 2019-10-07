@@ -103,3 +103,15 @@ function initCarousel() {
 }
 initCarousel();
 //Slide images area ends
+
+//modal interactionts
+
+const selectSizeBtn = document.querySelector(".selectSizeBtn");
+const selectSizeS = document.querySelector(".selectSize");
+
+selectSizeS.addEventListener("click", activateSelectSizeBtn);
+
+function activateSelectSizeBtn() {
+  selectSizeBtn.removeAttribute("disabled");
+  selectSizeBtn.textContent = "Videre";
+}

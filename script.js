@@ -1,32 +1,31 @@
-let itemClassName = "carousel__photo";
+"use strict";
+//Slide images area starts
+//-----------------------------------------------------------
+let itemClassName = "slider-photo";
 let items = document.getElementsByClassName(itemClassName),
   totalItems = items.length,
   slide = 0,
   moving = true;
-
 // update the DOM with our classes
 function setInitialClasses() {
   items[totalItems - 1].classList.add("prev");
   items[0].classList.add("active");
   items[1].classList.add("next");
 }
-
 // Set click events to navigation buttons
 function setEventListeners() {
-  let next = document.getElementsByClassName("carousel__button--next")[0],
-    prev = document.getElementsByClassName("carousel__button--prev")[0];
+  let next = document.getElementsByClassName("slider-button-next")[0],
+    prev = document.getElementsByClassName("slider-button-prev")[0];
 
   next.addEventListener("click", moveNext);
   prev.addEventListener("click", movePrev);
 }
 function disableInteraction() {
   moving = true;
-
   setTimeout(function() {
     moving = false;
   }, 500);
 }
-
 function moveCarouselTo(slide) {
   // Check if carousel is moving, if not, allow interaction
   if (!moving) {
@@ -56,9 +55,6 @@ function moveCarouselTo(slide) {
         newNext = 0;
         oldNext = 1;
       }
-
-      // Now we've worked out where we are and where we're going, by adding and removing classes, we'll be triggering the carousel's transitions.
-
       // Based on the current slide, reset to default classes.
       items[oldPrevious].className = itemClassName;
       items[oldNext].className = itemClassName;
@@ -70,7 +66,6 @@ function moveCarouselTo(slide) {
     }
   }
 }
-
 // Next navigation handler
 function moveNext() {
   // Check if moving
@@ -81,12 +76,10 @@ function moveNext() {
     } else {
       slide++;
     }
-
     // Move carousel to updated slide
     moveCarouselTo(slide);
   }
 }
-
 // Previous navigation handler
 function movePrev() {
   // Check if moving
@@ -97,20 +90,16 @@ function movePrev() {
     } else {
       slide--;
     }
-
     // Move carousel to updated slide
     moveCarouselTo(slide);
   }
 }
-
 // Initialise carousel
 function initCarousel() {
   setInitialClasses();
   setEventListeners();
-
   // Set moving to false now that the carousel is ready
   moving = false;
 }
-
-// make it rain
 initCarousel();
+//Slide images area ends

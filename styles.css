@@ -86,20 +86,20 @@ a {
   width: 18px;
 }
 /*--Style Image Slider --*/
-.carousel-wrapper {
+.slider-wrapper {
   overflow: hidden;
   width: 100%;
   margin: auto;
 }
-.carousel-wrapper * {
+.slider-wrapper * {
   box-sizing: border-box;
 }
-.carousel {
+.slider {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-.carousel__photo {
+.slider-photo {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -109,24 +109,24 @@ a {
   z-index: 100;
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
 }
-.carousel__photo.initial,
-.carousel__photo.active {
+.slider-photo.initial,
+.slider-photo.active {
   opacity: 1;
   position: relative;
   z-index: 900;
 }
-.carousel__photo.prev,
-.carousel__photo.next {
+.slider-photo.prev,
+.slider-photo.next {
   z-index: 800;
 }
-.carousel__photo.prev {
+.slider-photo.prev {
   transform: translateX(-100%);
 }
-.carousel__photo.next {
+.slider-photo.next {
   transform: translateX(100%);
 }
-.carousel__button--prev,
-.carousel__button--next {
+.slider-button-prev,
+.slider-button-next {
   position: absolute;
   top: 50%;
   width: 3rem;
@@ -138,15 +138,15 @@ a {
   z-index: 1001; /* Sit on top of everything */
   border: 1px solid black;
 }
-.carousel__button--prev {
+.slider-button-prev {
   left: 0;
 }
-.carousel__button--next {
+.slider-button-next {
   right: 0;
 }
 /* Use pseudo elements to insert arrows inside of navigation buttons */
-.carousel__button--prev::after,
-.carousel__button--next::after {
+.slider-button-prev::after,
+.slider-button-next::after {
   content: " ";
   position: absolute;
   width: 10px;
@@ -157,8 +157,67 @@ a {
   border-bottom: 2px solid black;
   transform: translate(-50%, -50%) rotate(135deg);
 }
-
-.carousel__button--next::after {
+.slider-button-next::after {
   left: 47%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*--Style price area--*/
+.delivery-small {
+  color: gray;
+}
+.buy-now {
+  background-color: #5c1182;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border-radius: 2px;
+  color: white;
+}
+.discount1,
+.discount2 {
+  color: #f36;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/*--Style additional information area--*/
+ol {
+  list-style-type: none;
+  display: block;
+}
+
+/*--Style rating stars--*/
+.all-stars {
+  color: #555;
+  font-size: 34px;
+}
+
+.stars-orange {
+  color: #f97d00;
+}
+
+.half {
+  display: inline-flex;
+}
+
+.half > div:first-child {
+  overflow: hidden;
+  width: 12px;
+  z-index: 1;
+  color: #f97d00;
+}
+.half > div:last-child {
+  position: relative;
+  margin-left: -12px;
+}
+
+/*--Other offers style--*/
+.campaign-image:hover {
+  opacity: 0.75;
+  transform: scale(1.05) rotate(0.02deg);
+}
+.campaign-image {
+  transition: all 0.86s cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: 100%;
 }

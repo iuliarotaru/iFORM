@@ -44,7 +44,72 @@
         No binding
       </li>
     </ol>
-
+    <div class="modalBg hide">
+      <div class="modalWrapper" id="modalWrapper1">
+        <div class="modalHeaderWrapper">
+          <h1>ActiveFit fiberjakke</h1>
+          <img src="images/close.png" id="closeModal" alt="close" />
+        </div>
+        <div class="premiumWrapper" id="premiumWrapper1">
+          <img src="images/jakke.png" alt="jakke" />
+          <div class="selectSizeWrapper">
+            <label for="s">S</label>
+            <input type="radio" name="sizeSelect" id="s" class="selectSize" id="sizeS" />
+          </div>
+          <div class="selectSizeWrapper">
+            <label for="m">M</label>
+            <input type="radio" name="sizeSelect" id="m" class="selectSize" id="sizeM" />
+          </div>
+          <div class="selectSizeWrapper">
+            <label for="L">L</label>
+            <input type="radio" name="sizeSelect" id="l" class="selectSize" id="sizeL" />
+          </div>
+          <div class="selectSizeWrapper">
+            <label for="XL">XL</label>
+            <input type="radio" name="sizeSelect" id="xl" class="selectSize" id="sizeXL" />
+          </div>
+          <button class="selectSizeBtn" disabled>Vælg størrelse først...</button>
+        </div>
+      </div>
+      <div class="modalWrapper hide" id="modalWrapper2">
+        <div class="modalHeaderWrapper">
+          <img src="images/back.png" id="backToSizes" alt="back to the previous page" />
+          <h1>Vælg flere numre og spar mere!</h1>
+          <img src="images/close.png" id="closeModal" alt="close" />
+        </div>
+        <div class="premiumWrapper" id="premiumWrapper2">
+          <div class="selectSubWrapper">
+            <label>Dit valg</label>
+            <input type="radio" name="selectSubscription" id="nr4" class="selectSubsc" />
+            <p>
+              4 nr for<span class="oldPrice"> 960kr </span> 119 kr.<br />
+              <span class="savings">Spar 761 kr.!</span><br />
+              <span class="pricePerStk"> 50kr / blad</span>
+            </p>
+          </div>
+          <div class="selectSubWrapper">
+            <label>Mest populære</label>
+            <input type="radio" name="selectSubscription" id="nr6" class="selectSubsc" />
+            <p>
+              6 nr for<span class="oldPrice"> 1115kr. </span> 249 kr.<br />
+              <span class="savings">Spar 866 kr.!</span><br />
+              <span class="pricePerStk">42kr / blad</span>
+            </p>
+          </div>
+          <div class="selectSubWrapper">
+            <label></label>
+            <input type="radio" name="selectSubscription" id="nr8" class="selectSubsc" />
+            <p>
+              4 nr for<span class="oldPrice"> 1270kr </span> 349 kr.<br />
+              <span class="savings">Spar 921 kr.!</span><br />
+              <span class="pricePerStk">43kr / blad</span>
+            </p>
+          </div>
+          <button class="goToCartBtn">Gå til kurven</button>
+          <a href="#">Se din besparelse</a>
+        </div>
+      </div>
+    </div>
     <!--Active fit fiber jacket campaign area-->
     <div class="jacket-campaign">
       <!--Header-->

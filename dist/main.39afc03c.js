@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/vikto/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/vikto/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"D:\\kea\\theme_animation\\iForm2\\fonts\\GT-Walsheim-Bold.woff":[["GT-Walsheim-Bold.6bdb025b.woff","fonts/GT-Walsheim-Bold.woff"],"fonts/GT-Walsheim-Bold.woff"],"D:\\kea\\theme_animation\\iForm2\\fonts\\GT-Walsheim-Medium.woff":[["GT-Walsheim-Medium.12b7f8c8.woff","fonts/GT-Walsheim-Medium.woff"],"fonts/GT-Walsheim-Medium.woff"],"D:\\kea\\theme_animation\\iForm2\\fonts\\GT-Walsheim-Regular.woff":[["GT-Walsheim-Regular.62abcddb.woff","fonts/GT-Walsheim-Regular.woff"],"fonts/GT-Walsheim-Regular.woff"],"_css_loader":"C:/Users/vikto/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/vikto/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64837" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49525" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

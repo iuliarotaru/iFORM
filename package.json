@@ -18,7 +18,8 @@
   "homepage": "https://github.com/iuliarotaru/iFORM#readme",
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "sass": "^1.23.0"
   },
   "description": ""
 }

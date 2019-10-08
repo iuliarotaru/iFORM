@@ -267,16 +267,46 @@ p {
   border-radius: 2px; }
 
 .personal-info label {
+  margin-left: 50px;
   color: #969494;
   background-color: #fff;
-  font-size: 20px; }
+  font-size: 20px;
+  place-self: center start;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transform: translate(10px, 0);
+  opacity: 0.7;
+  transition: 0.3s; }
+
+.form-field {
+  display: grid;
+  margin: 30px; }
+
+.form-field > * {
+  grid-area: 1 / 1; }
+
+input[type="text"]:focus + label {
+  transform: translate(0, -135%) scale(0.75);
+  opacity: 1;
+  color: #5c1182; }
 
 .pay {
   display: block;
-  border: 1px solid;
-  width: 70%;
+  width: 80%;
   margin: 10px auto;
-  height: 40px; }
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 0.9rem;
+  background-color: #fff;
+  border: 1px solid #e4e3e3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 2px; }
 
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

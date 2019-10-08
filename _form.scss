@@ -1,3 +1,4 @@
+// styling personal info page
 .info_wrapper {
   margin: auto;
   overflow: hidden;
@@ -9,7 +10,7 @@
   overflow: hidden;
   position: relative;
 }
-
+// input and label
 .personal-info input {
   display: block;
   margin: auto;
@@ -26,14 +27,29 @@
 }
 
 .personal-info label {
+  margin-left: 50px;
   color: #969494;
   background-color: #fff;
-  // color: #5c1182;
   font-size: 20px;
-  // font-size: 12px;
-  // transform: translateY(-173%);
-  // top: 50%;
-  // transition: transform 0.25s linear;
+  place-self: center start;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transform: translate(10px, 0);
+  opacity: 0.7;
+  transition: 0.3s;
+}
+// adding animation to label
+.form-field {
+  display: grid;
+  margin: 30px;
+}
+.form-field > * {
+  grid-area: 1 / 1;
+}
+input[type="text"]:focus + label {
+  transform: translate(0, -135%) scale(0.75);
+  opacity: 1;
+  color: #5c1182;
 }
 
 // styling payment page
@@ -43,4 +59,7 @@
   width: 70%;
   margin: 10px auto;
   height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

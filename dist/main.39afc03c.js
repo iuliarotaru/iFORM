@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\Petra\\Desktop\\iform2\\fonts\\GT-Walsheim-Bold.woff":[["GT-Walsheim-Bold.6bdb025b.woff","fonts/GT-Walsheim-Bold.woff"],"fonts/GT-Walsheim-Bold.woff"],"C:\\Users\\Petra\\Desktop\\iform2\\fonts\\GT-Walsheim-Medium.woff":[["GT-Walsheim-Medium.12b7f8c8.woff","fonts/GT-Walsheim-Medium.woff"],"fonts/GT-Walsheim-Medium.woff"],"C:\\Users\\Petra\\Desktop\\iform2\\fonts\\GT-Walsheim-Regular.woff":[["GT-Walsheim-Regular.62abcddb.woff","fonts/GT-Walsheim-Regular.woff"],"fonts/GT-Walsheim-Regular.woff"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\Admin\\Desktop\\iformprojekt\\fonts\\GT-Walsheim-Bold.woff":[["GT-Walsheim-Bold.6bdb025b.woff","fonts/GT-Walsheim-Bold.woff"],"fonts/GT-Walsheim-Bold.woff"],"C:\\Users\\Admin\\Desktop\\iformprojekt\\fonts\\GT-Walsheim-Medium.woff":[["GT-Walsheim-Medium.12b7f8c8.woff","fonts/GT-Walsheim-Medium.woff"],"fonts/GT-Walsheim-Medium.woff"],"C:\\Users\\Admin\\Desktop\\iformprojekt\\fonts\\GT-Walsheim-Regular.woff":[["GT-Walsheim-Regular.62abcddb.woff","fonts/GT-Walsheim-Regular.woff"],"fonts/GT-Walsheim-Regular.woff"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59712" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52911" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

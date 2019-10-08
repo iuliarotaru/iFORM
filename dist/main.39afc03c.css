@@ -87,7 +87,9 @@ header {
   background-color: #e9e8e8;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  height: 50px;
+  align-items: center; }
 
 a {
   text-decoration: none;
@@ -231,6 +233,14 @@ body {
   padding: 0;
   background-color: #e9e8e8; }
 
+.checkoutFooter h3,
+p {
+  text-align: center; }
+
+.checkoutFooter img {
+  margin: 0 auto;
+  display: block; }
+
 .info_wrapper {
   margin: auto;
   overflow: hidden;
@@ -242,8 +252,7 @@ body {
   overflow: hidden;
   position: relative; }
 
-.personal-info input,
-textarea {
+.personal-info input {
   display: block;
   margin: auto;
   font-size: 1.4rem;
@@ -258,17 +267,16 @@ textarea {
   border-radius: 2px; }
 
 .personal-info label {
-  color: #5c1182;
-  font-size: 12px;
-  transform: translateY(-173%);
+  color: #969494;
   background-color: #fff;
-  padding: 2px 4px;
-  position: absolute;
-  top: 50%;
-  transition: transform 0.25s linear; }
+  font-size: 20px; }
 
-::after {
-  box-sizing: border-box; }
+.pay {
+  display: block;
+  border: 1px solid;
+  width: 70%;
+  margin: 10px auto;
+  height: 40px; }
 
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

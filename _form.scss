@@ -10,8 +10,7 @@
   position: relative;
 }
 
-.personal-info input,
-textarea {
+.personal-info input {
   display: block;
   margin: auto;
   font-size: 1.4rem;
@@ -25,16 +24,23 @@ textarea {
   appearance: none;
   border-radius: 2px;
 }
+
 .personal-info label {
-  color: #5c1182;
-  font-size: 12px;
-  transform: translateY(-173%);
+  color: #969494;
   background-color: #fff;
-  padding: 2px 4px;
-  position: absolute;
-  top: 50%;
-  transition: transform 0.25s linear;
+  // color: #5c1182;
+  font-size: 20px;
+  // font-size: 12px;
+  // transform: translateY(-173%);
+  // top: 50%;
+  // transition: transform 0.25s linear;
 }
-::after {
-  box-sizing: border-box;
+
+// styling payment page
+.pay {
+  display: block;
+  border: 1px solid;
+  width: 70%;
+  margin: 10px auto;
+  height: 40px;
 }

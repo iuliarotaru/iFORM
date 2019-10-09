@@ -144,6 +144,7 @@ h1 {
   text-align: center;
   font-size: 18px;
   font-family: "GT Walsheim Bold";
+  margin: 30px 0;
 }
 
 button {
@@ -160,8 +161,45 @@ button {
   font-family: "GT Walsheim Medium";
 }
 
+.whiteBtn {
+  background-color: white;
+  border: 2px solid #5c1182;
+  color: #5c1182;
+}
+
 a {
   color: #5c1182;
   text-decoration: underline;
   font-family: "GT Walsheim Regular";
+}
+
+.breadcrumbs a {
+  color: #888b8d;
+  font-family: "GT Walsheim Medium";
+  text-decoration: none;
+}
+
+.savings {
+  font-family: "GT Walsheim Regular";
+  color: #f36;
+}
+
+.cartWrapper {
+  border: 2px solid #5c1182;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+  margin: 0 2em;
+}
+
+.productWrapper {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.totalPrice {
+  text-align: right;
 }

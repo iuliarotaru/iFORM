@@ -10,7 +10,7 @@ body {
 }
 // styling checkout footer
 .checkoutFooter h3,
-p {
+.checkoutFooter p {
   text-align: center;
 }
 .checkoutFooter img {
@@ -35,4 +35,11 @@ p {
 
 .hide {
   display: none;
+}
+
+.info_wrapper {
+  margin: auto;
+  overflow: hidden;
+  width: 600px;
+  background-color: #fff;
 }

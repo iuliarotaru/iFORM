@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Personal Info</title>
     <link rel="stylesheet" href="main.scss" />
+    <meta name="robots" content="noindex" />
+    <script src="https://kea-alt-del.dk/iform/login.js"></script>
   </head>
   
   <body>
@@ -52,6 +54,7 @@
           />
           <label for="name">Fornavn</label>
         </div>
+        <span class="checkoutv2-error" style="display: none;">Venligst angiv dit fornavn</span>
         <div class="form-field">
           <input
             name="last_name"
@@ -70,7 +73,8 @@
           />
           <label for="adress">Adress ex. Lyghten 16</label>
           </div>
-          <div class="form-field">
+          <div class="position-city">
+          <div id="postnr" class="form-field">
           <input
             name="postNr"
             type="text"
@@ -78,8 +82,10 @@
             required="required"
           />
           <label for="postNr">Postnr.</label>
-          </div>
-          <div class="form-field">
+          
+        </div>
+          
+          <div id="city" class="form-field">
           <input
             name="city"
             type="text"
@@ -88,6 +94,7 @@
           />
           <label for="city">By</label>
           </div>
+        </div>
           <div class="form-field">
           <input
             name="email"
@@ -107,9 +114,9 @@
           <label for="email">Telefonnr.</label>
           </div>
         </div>
-        <button onclick="window.location.href='/payment'">Videre til betaling</button>
+        <button><a href="/payment.html">Videre til betaling</a></button>
       </br>
-        <a style="text-align: center">Ga tilbage</a>
+        <a >Ga tilbage</a>
       </form>
       
       <footer class="checkoutFooter">

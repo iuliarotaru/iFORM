@@ -10,6 +10,26 @@
   overflow: hidden;
   position: relative;
 }
+//styling invalid
+.form-group.invalid .form-field {
+  border: 1px solid #dd1f3d;
+  color: #dd1f3d;
+}
+.form-group.invalid > div::after {
+  font-size: 2.3rem;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #dd1f3d;
+}
+.checkoutv2-error {
+  display: block;
+  color: #dd1f3d;
+  font-size: 1.2rem;
+  margin: 4px 0 8px;
+  -webkit-text-size-adjust: 100%;
+}
 // input and label
 .personal-info input {
   display: block;
@@ -47,28 +67,47 @@
 .form-field > * {
   grid-area: 1 / 1;
 }
-input[type="text"]:focus + label {
+.form-field input[type="text"]:not(:placeholder-shown) + label,
+.form-field input[type="text"]:focus + label {
   transform: translate(0, -135%) scale(0.75);
   opacity: 1;
   color: #5c1182;
 }
+
 //styling radio
-input[type="radio"] {
+
+.pay input[type="radio"] {
   border-radius: 50%;
-}
-input[type="checkbox"],
-input[type="radio"] {
   position: relative;
-  top: 2px;
-  float: left;
-  margin-right: 1rem;
   -moz-appearance: none;
   border: 1px solid #e4e3e3;
-  width: 2rem;
-  height: 2rem;
+  width: 35px;
+  height: 35px;
   background: #fff;
   box-shadow: none;
+  cursor: pointer;
 }
+
+.pay label {
+  display: block;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 200ms ease-in;
+  overflow: hidden;
+}
+.pay input[type="radio"]:checked:after {
+  content: "";
+  background: url(/images/checked-green.png) 0 / contain no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 // styling payment page
 .pay {
   display: block;
@@ -90,7 +129,6 @@ input[type="radio"] {
 }
 .pay img {
   width: 30%;
-  right: 0;
 }
 
 // styling checkout footer
@@ -101,4 +139,42 @@ p {
 .checkoutFooter img {
   margin: 0 auto;
   display: block;
+}
+.top {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+#centered li {
+  text-align: justify;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+#rules-check {
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+#rules-check input {
+  margin-top: 20px;
+}
+// styling postnr and city fields
+.position-city {
+  display: flex;
+}
+#postnr {
+  width: 50px;
+  margin-left: 70px;
+}
+
+#postnr label {
+  margin-left: 20px;
+  width: 100px;
+}
+#city {
+  width: 410px;
+  margin-left: 0;
 }

@@ -240,7 +240,7 @@ h1 {
   font-family: "GT Walsheim Bold";
 }
 
-button {
+button, .anchorBtn {
   background-color: #5c1182;
   border: 2px solid #5c1182;
   display: block;
@@ -251,6 +251,9 @@ button {
   padding: 1rem 2rem;
   color: white;
   font-family: "GT Walsheim Medium";
+  text-align: center;
+  cursor: pointer;
+  transition: .2s ease-in-out;
 }
 /*--What you get in iFORM area--*/
 .what-you-get {
@@ -381,4 +384,43 @@ footer div {
 }
 .payment-methods img {
   width: 80%;
+}
+
+.anchorBtn:hover {
+  text-decoration: none;
+  background: #822dad;
+  border: 2px solid #822dad;
+}
+
+.activeTab {
+  color: #f36!important;
+}
+
+.whiteBtn {
+  background-color: white;
+  border: 2px solid #5c1182;
+  color: #5c1182;
+  font-family: "GT Walsheim Medium";
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.whiteBtn:hover {
+  background-color: #5c1182;
+  border: 2px solid #5c1182;
+  color: white;
+  font-family: "GT Walsheim Medium";
+}
+
+.savings {
+  color: #f36;
+  font-family: "GT Walsheim Regular";
+}
+
+label[for="rules"], label[for="accept"] {
+  font-family: "GT Walsheim Regular";
+}
+
+a {
+  color: #f36;
 }

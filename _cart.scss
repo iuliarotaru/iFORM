@@ -1,0 +1,46 @@
+.productList {
+    border: 2px solid #5c1182;
+    border-radius: 4px;
+    padding: 1em;
+    margin-bottom: 30px;
+  }
+  
+  .singleProductWrapper {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    align-items: center;
+    border-bottom: 1px solid #e9e8e8;
+  }
+  
+  .singleProductWrapper > img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .productInfo > a {
+    color: #f36;
+    text-decoration: none;
+  }
+  
+  .totalPrice {
+    text-align: right;
+    padding: 10px 0 0 0;
+  }
+  
+  .cartOffer {
+    background-color: #f4f4f4;
+    padding: 2em;
+  }
+  
+  .totalPrice {
+    border-top: 1px solig grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  #savingsDKK {
+    color: #f36;
+  }

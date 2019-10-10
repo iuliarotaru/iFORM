@@ -28,13 +28,13 @@ closeModal.addEventListener("click", () => {
 buyNowBtn.addEventListener("click", () => {
   document.querySelector(".modalBg").classList.remove("hide");
 });
-console.log("set price");
+
 const chooseNr4 = document.querySelector("#nr4");
 const chooseNr6 = document.querySelector("#nr4");
 const chooseNr8 = document.querySelector("#nr4");
-const labelNr4 = document.querySelector("#nr4Label");
-const labelNr6 = document.querySelector("#nr6Label");
-const labelNr8 = document.querySelector("#nr8Label");
+const labelNr4 = document.querySelector("#labelNr4");
+const labelNr6 = document.querySelector("#labelNr6");
+const labelNr8 = document.querySelector("#labelNr8");
 
 document.querySelectorAll("input[name=selectSubscription]").forEach(el => {
   el.addEventListener("click", e => {

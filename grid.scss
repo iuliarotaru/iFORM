@@ -1,0 +1,53 @@
+@media only screen and (min-width: 768px) {
+  .jacket-campaign {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .jacket-campaign-header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .slider-wrapper {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .rating {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .additional-info {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .buy {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .jacket-campaign {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .slider-wrapper {
+    grid-column: 1/2;
+    grid-row: 1/5;
+  }
+  .jacket-campaign-header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .rating {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .additional-info {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .buy {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}

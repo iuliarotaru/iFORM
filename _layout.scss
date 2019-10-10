@@ -1,3 +1,4 @@
+/* --- GENERAL ELEMENTS USED BY EVERY PAGE --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,14 +10,6 @@ body {
   background-color: #e9e8e8;
 }
 // styling checkout footer
-.checkoutFooter h3,
-p {
-  text-align: center;
-}
-.checkoutFooter img {
-  margin: 0 auto;
-  display: block;
-}
 
 @font-face {
   font-family: "GT Walsheim Bold";
@@ -35,4 +28,28 @@ p {
 
 .hide {
   display: none;
+}
+
+.info_wrapper {
+  margin: auto;
+  overflow: hidden;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.mainWrapper {
+  padding: 2em;
+}
+
+.centered {
+  text-align: center;
+}
+/* --- FOOTER --- */
+.checkoutFooter h3,
+.checkoutFooter p {
+  text-align: center;
+}
+.checkoutFooter img {
+  margin: 0 auto;
+  display: block;
 }

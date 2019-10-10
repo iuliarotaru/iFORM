@@ -106,6 +106,9 @@
 }
 
 .modalHeaderWrapper > h1 {
+  margin-bottom: 0;
+}
+.modalHeaderWrapper > h1 {
   grid-column: 2;
 }
 
@@ -139,11 +142,6 @@
   margin: 0 5px;
 }
 
-.savings {
-  font-family: "GT Walsheim Regular";
-  color: #f36;
-}
-
 .pricePerStk {
   color: #aeaeae;
   font-size: 12px;
@@ -151,5 +149,10 @@
 }
 
 .premiumWrapper > a {
-  margin: 20px;
+  margin: 20px 0;
+}
+
+#closeModal,
+#backToSizes {
+  cursor: pointer;
 }

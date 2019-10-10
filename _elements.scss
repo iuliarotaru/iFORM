@@ -1,3 +1,13 @@
+/*--Style jacked campaign --*/
+.jacket-campaign {
+  background-color: #e9e8e8;
+  margin-bottom: 50px;
+}
+.jacket-campaign-header {
+  text-align: left;
+  padding: 15px;
+}
+
 a {
   text-decoration: none;
   color: #232323;
@@ -96,15 +106,48 @@ a {
   border-radius: 2px;
   color: white;
 }
+.buy {
+  margin: 20px;
+}
 .discount1,
 .discount2 {
   color: #f36;
   font-size: 1.5rem;
   line-height: 1;
+  margin-bottom: 5px;
+}
+.discount1 {
+  float: left;
+}
+.discount2 {
+  float: right;
+}
+.discount {
+  clear: both;
+}
+.delivery-small {
+  text-align: right;
+}
+ol li {
+  list-style: none;
 }
 
 /*--Style additional information area--*/
-.site-promises {
+
+.additional-info {
+  margin: 20px;
+}
+.about-jacket {
+  background-color: white;
+}
+.about-jacket h2 {
+  padding-top: 30px;
+}
+.about-jacket p {
+  text-align: left;
+}
+
+.about-jacket-information {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -126,6 +169,21 @@ a {
    object-fit: contain;
    background-size: contain;
    margin-bottom: -3px;
+}
+.about-jacket-information li img {
+  width: 20px;
+}
+.about-jacket-information li {
+  padding: 10px;
+}
+.about-jacket p {
+  margin: 10px;
+  font-size: 17px;
+}
+.video {
+  border: 0;
+  margin: 0 auto;
+  display: block;
 }
 
 /*--Style rating stars--*/
@@ -188,7 +246,45 @@ a {
   margin-bottom: -2px;
 }
 
+.rating {
+  text-align: center;
+}
 /*--Other offers style--*/
+
+.other-offers {
+  margin-top: 40px;
+}
+.other-offers h1 {
+  margin-bottom: 10px;
+}
+.campaign-title {
+  float: left;
+  margin: 10px;
+}
+.campaign-offer {
+  float: right;
+  margin: 10px;
+}
+.campaign-offer p {
+  color: #f36;
+}
+.campaign-header {
+  clear: both;
+}
+.campaign-buy {
+  clear: both;
+}
+.campaign-buy h5 {
+  float: left;
+  vertical-align: middle;
+  color: #f36;
+  margin: 20px;
+}
+.campaign-buy button {
+  float: right;
+  width: 50%;
+  margin-bottom: 20px;
+}
 .campaign-image:hover {
   opacity: 0.75;
   transform: scale(1.05) rotate(0.02deg);
@@ -210,6 +306,7 @@ h6 {
 }
 
 h1 {
+  /*text-align: center;*/
   font-size: 18px;
   margin-bottom: 2em;
 }
@@ -275,7 +372,34 @@ button:hover,
   color: #f36;
 }
 
-.savings {
+/*--What you get in iFORM area--*/
+.what-you-get {
+  margin-top: 110px;
+  background-color: white;
+}
+.what-you-get-text {
+  margin: 20px;
+  padding-top: 20px;
+}
+.what-you-get-list {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.what-you-get-list li img {
+  width: 20px;
+  padding: 0;
+}
+.what-you-get-text p {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.what-you-get img {
+  width: 80%;
+  padding: 20px;
+}
+a {
+  color: #5c1182;
   font-family: "GT Walsheim Regular";
   color: #f36;
 }
@@ -333,4 +457,104 @@ button:hover,
 }
 .partner-wrapper img {
   object-fit: contain;
+}
+/*--Benefits area style --*/
+.benefit-shop {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.benefit-shop img {
+  width: 100%;
+}
+.benefit-text {
+  margin: 20px;
+}
+.benefit-text li img {
+  width: 20px;
+}
+.benefit-text h3 {
+  padding: 10px;
+}
+.benefit-text ol li {
+  padding: 7px;
+}
+.benefit-text p {
+  text-align: left;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+/*--Reviews area style--*/
+.reviews-slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+.mySlides h2 {
+  margin: 20px;
+}
+.mySlides p {
+  font-size: 15px;
+  color: #888b8d;
+}
+.mySlides h4 {
+  margin: 15px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-decoration: none;
+}
+
+/*--Footer area style --*/
+footer {
+  margin: 20px;
+}
+footer p {
+  text-align: left;
+}
+footer div {
+  margin-top: 30px;
+}
+.kundeservice {
+  margin-top: 15px;
+}
+.telefon,
+.man-tors,
+.fredag {
+  clear: both;
+}
+.name {
+  float: left;
+}
+.number {
+  float: right;
+}
+.payment-methods img {
+  width: 80%;
 }

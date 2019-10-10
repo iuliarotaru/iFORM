@@ -56,11 +56,10 @@ a:hover {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background-color: #5c1182;
+  background: #5c1182;
   border-radius: 3px;
+
   z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 .navigation {
@@ -109,22 +108,6 @@ a:hover {
   grid-column: 2/3;
   grid-row: 1/2;
   width: 100%;
-}
-
-#checkedIcon {
-  width: 18px;
-}
-
-// form header style
-.breadcrumbs {
-  background-color: #f4f4f4;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 50px;
-  align-items: center;
-  border-bottom: 1px solid #e9e8e8;
-  border-top: 1px solid #e9e8e8;
 }
 .site-promises {
   grid-column: 2/3;

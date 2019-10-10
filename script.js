@@ -141,3 +141,32 @@ document.getElementById("prevReview").addEventListener("click", function() {
 document.getElementById("nextReview").addEventListener("click", function() {
   plusSlides(1);
 });
+
+const selectSizeBtn = document.querySelector(".selectSizeBtn");
+const selectSizeS = document.querySelector(".selectSize");
+const backBtn = document.querySelector("#backToSizes");
+const closeModal = document.querySelector("#closeModal");
+const buyNowBtn = document.querySelector(".buy-now");
+
+selectSizeS.addEventListener("click", activateSelectSizeBtn);
+
+function activateSelectSizeBtn() {
+  selectSizeBtn.removeAttribute("disabled");
+  selectSizeBtn.textContent = "Videre";
+}
+
+selectSizeBtn.addEventListener("click", () => {
+  document.querySelector("#modalWrapper2").classList.remove("hide");
+});
+
+backBtn.addEventListener("click", () => {
+  document.querySelector("#modalWrapper2").classList.add("hide");
+});
+
+closeModal.addEventListener("click", () => {
+  document.querySelector(".modalBg").classList.add("hide");
+});
+
+buyNowBtn.addEventListener("click", () => {
+  document.querySelector(".modalBg").classList.remove("hide");
+});

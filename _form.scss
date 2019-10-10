@@ -28,9 +28,7 @@
 .personal-info input {
   display: block;
   margin: auto;
-  font-size: 1.4rem;
   line-height: 1.5;
-  width: 80%;
   padding: 0.9rem;
   background-color: #fff;
   border: 1px solid #e4e3e3;
@@ -80,6 +78,7 @@
   background: #fff;
   box-shadow: none;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .pay label {
@@ -102,10 +101,13 @@
   border-radius: 50%;
 }
 
+#rules-check {
+  font-family: "GT Walsheim Regular";
+}
+
 // styling payment page
 .pay {
   display: block;
-  width: 80%;
   margin: 10px auto;
   height: 60px;
   display: flex;
@@ -120,14 +122,17 @@
   -moz-appearance: none;
   appearance: none;
   border-radius: 2px;
+  position: relative;
+  object-fit: contain;
 }
+
 .pay img {
-  width: 30%;
+  display: inline-block;
+  width: 25%;
 }
 
 // styling checkout footer
-.checkoutFooter h3,
-p {
+.checkoutFooter h3, .checkoutFooter p {
   text-align: center;
 }
 .checkoutFooter img {
@@ -149,8 +154,6 @@ p {
 }
 #rules-check {
   text-align: left;
-  margin-left: 50px;
-  margin-right: 20px;
 }
 #rules-check input {
   margin-top: 20px;

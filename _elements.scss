@@ -355,6 +355,7 @@ button:hover,
 .anchorBtn:hover {
   background-color: #8637af;
   border: 2px solid #8637af;
+  text-decoration: none;
 }
 
 .anchorBtn {
@@ -370,6 +371,11 @@ button:hover,
 
 .breadcrumbs .activeTab {
   color: #f36;
+}
+
+label {
+  font-family: "GT Walsheim Regular";
+  font-size: 1em;
 }
 
 /*--What you get in iFORM area--*/
@@ -429,6 +435,7 @@ a {
 .productInfo > a {
   color: #f36;
   text-decoration: none;
+  text-align: left;
 }
 
 .totalPrice {
@@ -555,6 +562,7 @@ footer div {
 .number {
   float: right;
 }
-.payment-methods img {
-  width: 80%;
+
+.needsSpacingTop {
+  margin-top: 1em;
 }

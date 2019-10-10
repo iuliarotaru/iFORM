@@ -12,35 +12,33 @@
   
   <body>
     <div class="info_wrapper">
-      <header>
-        <!--Navigation area-->
-    
-        <nav id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </nav>
-        <!--<ul id="menu">
-          <li><a href="#">About iFORM</a></li>
-          <li><a href="#">About ActiveFit Fiber jacket</a></li>
-          <li><a href="#">Readers review</a></li>
-          <li><a href="#">Other offers from iFORM</a></li>
-          <li><a href="#">Questions and Answers</a></li>
-          <li><a href="#">Customer Service</a></li>
-          <li><a href="#">Gift card</a></li>
-          <li><a href="#">Subscription store</a></li>
-        </ul> -->
-    
-        <!--Logo area-->
-        <div class="logo">
-          <img src="images/logo.png" alt="logo" id="logo" />
-        </div>
-      </header>
+        <div class="headerWrapper">
+            <nav id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </nav>
+            <!--<ul id="menu">
+              <li><a href="#">About iFORM</a></li>
+              <li><a href="#">About ActiveFit Fiber jacket</a></li>
+              <li><a href="#">Readers review</a></li>
+              <li><a href="#">Other offers from iFORM</a></li>
+              <li><a href="#">Questions and Answers</a></li>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Gift card</a></li>
+              <li><a href="#">Subscription store</a></li>
+            </ul> -->
+      
+            <!--Logo area-->
+            <div class="logo">
+              <img src="images/logo.png" alt="logo" id="logo" />
+            </div>
+      </div>
       <div class="breadcrumbs">
-        <a>1. Kurv</a>
-        <a style="color: #fe3366">2. Levering</a>
-        <a>3. Betalingsmetode</a>
+        <a href="cart.html">1. Kurv</a>
+        <a class="activeTab">2. Levering</a>
+        <a href="#">3. Betalingsmetode</a>
       </div>
       <form class="personal-info">
         <h1 class="page_title">Angiv din personlige oplysninger</h1>
@@ -114,9 +112,9 @@
           <label for="email">Telefonnr.</label>
           </div>
         </div>
-        <button><a href="/payment.html">Videre til betaling</a></button>
+        <a class="anchorBtn" href="/payment.html">Videre til betaling</a>
       </br>
-        <a >Ga tilbage</a>
+        <a href="cart.html">Gå tilbage</a>
       </form>
       
       <footer class="checkoutFooter">
@@ -131,7 +129,7 @@
             velbefindende ved at spise rigtigt.
           </p>
         <h3>Sikker betaling med</h3>
-        <img src="images/payment.png" />
+        <img src="images/icon-payment-options-da.png" />
       </footer>
     </div>
   </body>

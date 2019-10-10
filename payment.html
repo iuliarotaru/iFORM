@@ -12,77 +12,66 @@
  
   <body>
     <div class="info_wrapper">
-      <header>
-        <!--Navigation area-->
-    
-        <nav id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </nav>
-        <!--<ul id="menu">
-          <li><a href="#">About iFORM</a></li>
-          <li><a href="#">About ActiveFit Fiber jacket</a></li>
-          <li><a href="#">Readers review</a></li>
-          <li><a href="#">Other offers from iFORM</a></li>
-          <li><a href="#">Questions and Answers</a></li>
-          <li><a href="#">Customer Service</a></li>
-          <li><a href="#">Gift card</a></li>
-          <li><a href="#">Subscription store</a></li>
-        </ul> -->
-    
-        <!--Logo area-->
-        <div class="logo">
-          <img src="images/logo.png" alt="logo" id="logo" />
-        </div>
+        <div class="headerWrapper">
+            <nav id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </nav>
+            <!--<ul id="menu">
+              <li><a href="#">About iFORM</a></li>
+              <li><a href="#">About ActiveFit Fiber jacket</a></li>
+              <li><a href="#">Readers review</a></li>
+              <li><a href="#">Other offers from iFORM</a></li>
+              <li><a href="#">Questions and Answers</a></li>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Gift card</a></li>
+              <li><a href="#">Subscription store</a></li>
+            </ul> -->
       
-      </header>
+            <!--Logo area-->
+            <div class="logo">
+              <img src="images/logo.png" alt="logo" id="logo" />
+            </div>
+      </div>
    
       <div class="breadcrumbs">
         <a href="cart.html">1. Kurv</a>
         <a href="personal_info.html">2. Levering</a>
         <a class="activeTab">3. Betalingsmetode</a>
       </div>
-
+      <div class="mainWrapper">
+      <h1 class="centered">Vælg betalingsmetode</h1>
       <form>
-        <h1>Vælg betalingsmetode</h1>
         <div class="pay">
-          <input type="radio" name="payment" value="visa" /><label>Visa/Dankort</label> <br />
-          
-        <img src="images/payment1.png">
+          <input type="radio" name="payment" value="visa" /><label>Visa/Dankort</label> <img src="images/payment1.png">
         </div>
     </br >
         <div class="pay">
-          <input type="radio" name="payment" value="kredit" /> <label>Kreditkort</label><br />
-          
-          <img src="images/payment2.png">
+          <input type="radio" name="payment" value="kredit" /> <label>Kreditkort</label> <img src="images/payment2.png">
         </div>
     </br >
         <div class="pay">
           <input type="radio" name="payment" value="mobilepay" />
-          <label>MobilePay</label></br>
-          
-          <img src="images/payment3.png">
+          <label>MobilePay</label> <img src="images/payment3.png">
         </div>
     </br >
         <div class="pay">
-          <input type="radio" name="payment" value="girokort" /><label>Girokort</label> <br />
-       <h5>+15 kr i avgift</h5>
-      
+          <input type="radio" name="payment" value="girokort" /><label>Girokort</label> <h5>+15 kr i avgift</h5>
         </div>
       </form>
-    <div id="rules-check">
-      <input type="checkbox" name="rules" value="rules"> Jeg har læst og accepteret abonnementsbetingelserne <a>Læs mere</a><br>
-      <input type="checkbox" name="accept" value="accept"> Ja tak, jeg vil gerne modtage spændende nyhedsbreve og tilbud om Medieprodukter, Bolig &amp; Livsstil, Sport &amp; Fritid, Rejser, Mode &amp; Skønhed, Dagligvarer, Events, Analyser og Spil via brev, telefon og andre elektroniske medier f.eks e-mail og sms fra Bonnier Publications Koncernen. Du kan til hver en tid afmelde dig direkte markedsføring. <a>Læs mere</a>
-    </br>
-    </div>
-<ul id="centered">
+      <input type="checkbox" name="rules" value="rules"> <label for="rules">Jeg har læst og accepteret abonnementsbetingelserne <a>Læs mere</a></label><br>
+      <input type="checkbox" name="accept" value="accept"> <label for="accept">Ja tak, jeg vil gerne modtage spændende nyhedsbreve og tilbud om Medieprodukter, Bolig &amp; Livsstil, Sport &amp; Fritid, Rejser, Mode &amp; Skønhed, Dagligvarer, Events, Analyser og Spil via brev, telefon og andre elektroniske medier f.eks e-mail og sms fra Bonnier Publications Koncernen. Du kan til hver en tid afmelde dig direkte markedsføring. <a>Læs mere</a></label>
+<h3 class="needsSpacingTop">Vigtig information:</h3>
+<ol>
   <li>Efter tilbuddet fortsætter du i løbende abonnement og kan til enhver tid opsige det.</li>
   <li>I FORM udkommer 18 gange om året.</li>
   <li>Abonnementet betales for 4 numre ad gangen, i alt 310 kr.. (77,50 kr. pr. nummer)</li>
-</ul>
-<a href="personal_info.html">Ga tilbage</a>
+</ol>
+<br>
+<a class="anchorBtn" href="thankyou.html">Betal og bestill</a>
+<a class="centered" href="personal_info.html">Gå tilbage</a>
       <footer class="checkoutFooter">
           <h3>Om I FORM</h3>
           <br />
@@ -94,9 +83,10 @@
             maden påvirker din krop og dit humør, og hvordan du kan øge dit
             velbefindende ved at spise rigtigt.
           </p>
-        <h3>Sikker betaling med</h3>
-        <img src="images/payment.png" />
+        <h3 class="needsSpacingTop">Sikker betaling med</h3>
+        <img src="images/icon-payment-options-da.png" />
       </footer>
+    </div>
     </div>
   </body>
 </html>

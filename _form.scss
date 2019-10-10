@@ -27,7 +27,7 @@
 }
 
 .personal-info label {
-  margin-left: 50px;
+  margin-left: 60px;
   color: #969494;
   background-color: #fff;
   font-size: 20px;
@@ -38,6 +38,7 @@
   opacity: 0.7;
   transition: 0.3s;
 }
+
 // adding animation to label
 .form-field {
   display: grid;
@@ -51,13 +52,29 @@ input[type="text"]:focus + label {
   opacity: 1;
   color: #5c1182;
 }
-
+//styling radio
+input[type="radio"] {
+  border-radius: 50%;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  position: relative;
+  top: 2px;
+  float: left;
+  margin-right: 1rem;
+  -moz-appearance: none;
+  border: 1px solid #e4e3e3;
+  width: 2rem;
+  height: 2rem;
+  background: #fff;
+  box-shadow: none;
+}
 // styling payment page
 .pay {
   display: block;
   width: 80%;
   margin: 10px auto;
-  height: 40px;
+  height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,4 +87,18 @@ input[type="text"]:focus + label {
   -moz-appearance: none;
   appearance: none;
   border-radius: 2px;
+}
+.pay img {
+  width: 30%;
+  right: 0;
+}
+
+// styling checkout footer
+.checkoutFooter h3,
+p {
+  text-align: center;
+}
+.checkoutFooter img {
+  margin: 0 auto;
+  display: block;
 }

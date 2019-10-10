@@ -7,34 +7,71 @@
     <title>Payment</title>
     <link rel="stylesheet" href="main.scss" />
   </head>
+ 
   <body>
     <div class="info_wrapper">
-      <header></header>
+      <header>
+        <!--Navigation area-->
+    
+        <nav id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </nav>
+        <!--<ul id="menu">
+          <li><a href="#">About iFORM</a></li>
+          <li><a href="#">About ActiveFit Fiber jacket</a></li>
+          <li><a href="#">Readers review</a></li>
+          <li><a href="#">Other offers from iFORM</a></li>
+          <li><a href="#">Questions and Answers</a></li>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">Gift card</a></li>
+          <li><a href="#">Subscription store</a></li>
+        </ul> -->
+    
+        <!--Logo area-->
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" id="logo" />
+        </div>
+      </header>
       <div class="breadcrumbs">
         <a>1. Kurv</a>
         <a>2. Levering</a>
-        <a>3. Betalingsmetode</a>
+        <a style="color: #fe3366">3. Betalingsmetode</a>
       </div>
 
       <form>
         <h1>Vælg betalingsmetode</h1>
         <div class="pay">
           <input type="radio" name="payment" value="visa" /> Visa/Dankort<br />
+        <img src="images/payment1.png">
         </div>
     </br >
         <div class="pay">
           <input type="radio" name="payment" value="kredit" /> Kreditkort<br />
+          <img src="images/payment2.png">
         </div>
     </br >
         <div class="pay">
           <input type="radio" name="payment" value="mobilepay" />
           MobilePay
+          <img src="images/payment3.png">
         </div>
     </br >
         <div class="pay">
           <input type="radio" name="payment" value="girokort" /> Girokort<br />
+       <h5>+15 kr i avgift</h5>
         </div>
       </form>
+      <input type="checkbox" name="rules" value="rules"> Jeg har læst og accepteret abonnementsbetingelserne <a>Læs mere</a><br>
+      <input type="checkbox" name="accept" value="accept"> Ja tak, jeg vil gerne modtage spændende nyhedsbreve og tilbud om Medieprodukter, Bolig &amp; Livsstil, Sport &amp; Fritid, Rejser, Mode &amp; Skønhed, Dagligvarer, Events, Analyser og Spil via brev, telefon og andre elektroniske medier f.eks e-mail og sms fra Bonnier Publications Koncernen. Du kan til hver en tid afmelde dig direkte markedsføring. <a>Læs mere</a>
+    </br>
+<ul class="centered">
+  <li>Efter tilbuddet fortsætter du i løbende abonnement og kan til enhver tid opsige det.</li>
+  <li>I FORM udkommer 18 gange om året.</li>
+  <li>Abonnementet betales for 4 numre ad gangen, i alt 310 kr.. (77,50 kr. pr. nummer)</li>
+</ul>
       <footer class="checkoutFooter">
           <h3>Om I FORM</h3>
           <br />

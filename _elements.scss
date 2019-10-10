@@ -140,7 +140,12 @@ ol {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "GT Walsheim Bold";
 }
 
@@ -153,8 +158,6 @@ h3 {
   margin-bottom: 1em;
 }
 
-
-
 a {
   color: #5c1182;
   text-decoration: underline;
@@ -165,9 +168,12 @@ p {
   font-family: "GT Walsheim Regular";
 }
 
-button, .whiteBtn:hover  {
+button,
+.whiteBtn:hover,
+.anchorBtn {
   background-color: #5c1182;
   border: 2px solid #5c1182;
+  border-radius: 4px;
   display: block;
   width: 100%;
   font-size: 18px;
@@ -178,7 +184,7 @@ button, .whiteBtn:hover  {
   color: white;
   font-family: "GT Walsheim Medium";
   cursor: pointer;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 button a {
@@ -186,16 +192,23 @@ button a {
   text-decoration: none;
 }
 
-.whiteBtn{
+.whiteBtn {
   background-color: white;
   border: 2px solid #5c1182;
   color: #5c1182;
 }
 
-button:hover {
+button:hover,
+.anchorBtn:hover {
   background-color: #8637af;
   border: 2px solid #8637af;
 }
+
+.anchorBtn {
+  text-decoration: none;
+  text-align: center;
+}
+
 .breadcrumbs a {
   color: #888b8d;
   font-family: "GT Walsheim Medium";
@@ -244,7 +257,7 @@ button:hover {
 }
 
 .cartOffer {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   padding: 2em;
 }
 
@@ -254,6 +267,6 @@ button:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-.savingsInCartNr {
+#savingsDKK {
   color: #f36;
 }

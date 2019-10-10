@@ -35,27 +35,27 @@
       <div class="breadcrumbs">
         <a class="activeTab" href="#">1. Kurv</a>
         <a href="#">2. Levering</a>
-        <a href="#" >3. Betalingsmetode</a>
+        <a href="#">3. Betalingsmetode</a>
       </div>
       <div class="mainWrapper">
-      <h1 class="centered">Din kurv</h1>
-      <div class="productList">
-        <div class="singleProductWrapper">
-          <img src="images/jakke.png" />
-          <div class="productInfo">
-            <p><strong>4nr. af iFORM</strong></p>
-            <p>+Active Fit fiberjakke (L)</p>
-            <a href="index.html"><strong>Edit size</strong></a>
-            <p>Introduktionspris: 199 kr.</p>
+        <h1 class="centered">Din kurv</h1>
+        <div class="productList">
+          <div class="singleProductWrapper">
+            <img src="images/jakke.png" />
+            <div class="productInfo">
+              <p><strong>4nr. af iFORM</strong></p>
+              <p>+Active Fit fiberjakke (L)</p>
+              <a href="index.html"><strong>Edit size</strong></a>
+              <p>Introduktionspris: 199 kr.</p>
+            </div>
+          </div>
+          <div class="totalPrice">
+            <p>Totalpris:</p>
+            <p id="totalPriceDKK"><strong>199 kr.</strong></p>
           </div>
         </div>
-        <div class="totalPrice">
-          <p>Totalpris:</p>
-          <p><strong>199 kr.</strong></p>
-        </div>
+        <h2 class="centered">Du sparer <span id="savingsDKK">761 kr.</span></h2>
       </div>
-      <h2 class="centered">Du sparer <span class="savingsInCartNr">761 kr.</span></h2>
-    </div>
       <div class="cartOffer centered">
         <h3>
           Det er endnu billigere digitalt
@@ -63,13 +63,14 @@
         <p>Ved at købe abonnementet digitalt sparer vi på produktion og levering - og disse penge vil vi give tilbage til dig. Skift til digitalt abonnement og spar <span class="savings"></span></p>
       </div>
       <div class="mainWrapper">
-      <button class="whiteBtn">
-        Skift til digitalt abonnement
-      </button>
-      <p class="centered">eller</p>
-      <button><a href="personal_info.html">Gå videre til levering</a></button>
-    </div>
+        <button class="whiteBtn" id="digitalSub">
+          Skift til digitalt abonnement
+        </button>
+        <p class="centered">eller</p>
+        <a class="anchorBtn" href="personal_info.html">Gå videre til levering</a>
+      </div>
     </div>
     <script src="script.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

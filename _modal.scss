@@ -131,6 +131,10 @@
   grid-column: 1 / span 2;
 }
 
+#premiumWrapper1 > a {
+  grid-column: 1 / span 2;
+}
+
 .premiumWrapper > button:disabled {
   background-color: #c4c4c4;
   border: 2px solid #c4c4c4;

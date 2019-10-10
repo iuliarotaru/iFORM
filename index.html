@@ -5,35 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main.scss" />
+    <script
+      src="https://kit.fontawesome.com/193451974c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Landing Page</title>
   </head>
   <body>
     <header class="container">
       <!--Navigation area-->
-
-      <!--<nav id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </nav>
-      <ul id="menu">
-        <li><a href="#">About iFORM</a></li>
-        <li><a href="#">About ActiveFit Fiber jacket</a></li>
-        <li><a href="#">Readers review</a></li>
-        <li><a href="#">Other offers from iFORM</a></li>
-        <li><a href="#">Questions and Answers</a></li>
-        <li><a href="#">Customer Service</a></li>
-        <li><a href="#">Gift card</a></li>
-        <li><a href="#">Subscription store</a></li>
-      </ul> -->
       <div class="header-container">
-        <label for="nav-checkbox" class="hide-lg"
-          ><img
-            src="https://cdn0.iconfinder.com/data/icons/social-messaging-productivity-4/128/menu-2-128.png"
-            alt="burger-menu"
-            class="burger-menu"
-        /></label>
+        <label for="nav-checkbox" class="hide-lg">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         <!--Logo area-->
         <div class="logo">
           <img src="images/logo.png" alt="logo" id="logo" />
@@ -57,17 +44,20 @@
             No binding
           </li>
         </ol>
-        <nav>
-          <input type="checkbox" class="nav-checkbox hide" id="nav-checkbox" />
-          <ul class="navigation">
-            <li class="nav-item"><a href="#">Shop</a></li>
-            <li class="nav-item"><a href="#">Inspiration</a></li>
-            <li class="nav-item"><a href="#">Wissen</a></li>
-            <li class="nav-item"><a href="#">Community</a></li>
-            <li class="nav-item"><a href="#">Magazin</a></li>
-          </ul>
-        </nav>
       </div>
+      <nav>
+        <input type="checkbox" class="nav-checkbox hide" id="nav-checkbox" />
+        <ul class="navigation">
+          <li><a href="#">About iFORM</a></li>
+          <li><a href="#">About ActiveFit Fiber jacket</a></li>
+          <li><a href="#">Readers review</a></li>
+          <li><a href="#">Other offers from iFORM</a></li>
+          <li><a href="#">Questions and Answers</a></li>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">Gift card</a></li>
+          <li><a href="#">Subscription store</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="modalBg hide">
@@ -253,116 +243,123 @@
 
     <!--About the jacket area-->
     <div class="about-jacket">
-      <h2>Lækker & let fiberjakke</h2>
-      <h2>– til forår og efterår</h2>
-      <ol class="about-jacket-information">
-        <li>
-          <img src="images/checked-green.png" /> Perfekt til dig, der holder af
-          at være aktiv og nyde livet udendørs
-        </li>
-        <li>
-          <img src="images/checked-green.png" />Behagelig til en rask gåtur, i
-          haven eller som let overtøj i hverdagen
-        </li>
-        <li>
-          <img src="images/checked-green.png" />Fungerer godt som et ekstra lag
-          under din regn- eller vindjakke
-        </li>
-      </ol>
-      <p><strong>Værdi: 600 kr.</strong></p>
-      <p><strong>Læs mere </strong></p>
+      <div class="text-side">
+        <h2>Lækker & let fiberjakke</h2>
+        <h2>– til forår og efterår</h2>
+        <ol class="about-jacket-information">
+          <li>
+            <img src="images/checked-green.png" /> Perfekt til dig, der holder
+            af at være aktiv og nyde livet udendørs
+          </li>
+          <li>
+            <img src="images/checked-green.png" />Behagelig til en rask gåtur, i
+            haven eller som let overtøj i hverdagen
+          </li>
+          <li>
+            <img src="images/checked-green.png" />Fungerer godt som et ekstra
+            lag under din regn- eller vindjakke
+          </li>
+        </ol>
+        <p><strong>Værdi: 600 kr.</strong></p>
+        <p><strong>Læs mere </strong></p>
+      </div>
+      <iframe
+        class="video"
+        src="https://player.vimeo.com/video/290654580?title=0&byline=0&portrait=0"
+      ></iframe>
     </div>
-    <!--TO DO: VIDEO HERE-->
 
     <!--Other offers area-->
     <div class="other-offers">
       <h1>Andre tilbud fra I FORM</h1>
-      <!--First other offer-->
-      <section class="campaign-wrapper">
-        <img
-          class="campaign-image"
-          src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2019/09/1518_ifo_1440x1080_slider1_dk-834x625.jpg"
-        />
-        <div class="campaign-header">
-          <div class="campaign-title">
-            <h3>
-              <strong>4 magasiner</strong> <br />
-              +Active Fit fritidsjakke
-            </h3>
+      <div class="sections-offers">
+        <!--First other offer-->
+        <section class="campaign-wrapper">
+          <img
+            class="campaign-image"
+            src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2019/09/1518_ifo_1440x1080_slider1_dk-834x625.jpg"
+          />
+          <div class="campaign-header">
+            <div class="campaign-title">
+              <h3>
+                <strong>4 magasiner</strong> <br />
+                +Active Fit fritidsjakke
+              </h3>
+            </div>
+            <div class="campaign-offer">
+              <p>
+                149kr. <br />
+                <small> +porto 49,50 kr.</small>
+              </p>
+            </div>
           </div>
-          <div class="campaign-offer">
-            <p>
-              149kr. <br />
-              <small> +porto 49,50 kr.</small>
-            </p>
+          <div class="campaign-buy">
+            <h5>Spar 660 kr.!</h5>
+            <button>Laes mere</button>
           </div>
-        </div>
-        <div class="campaign-buy">
-          <h5>Spar 660 kr.!</h5>
-          <button>Laes mere</button>
-        </div>
-      </section>
-      <!--Second other offer-->
-      <section class="campaign-wrapper">
-        <img
-          class="campaign-image"
-          src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2019/08/1450_ifo_1440x1080_slider1_dk-834x625.jpg"
-        />
-        <div class="campaign-header">
-          <div class="campaign-title">
-            <h3>
-              <strong>3 magasiner</strong> <br />
-              +Sports-bh fra Diadora
-            </h3>
+        </section>
+        <!--Second other offer-->
+        <section class="campaign-wrapper">
+          <img
+            class="campaign-image"
+            src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2019/08/1450_ifo_1440x1080_slider1_dk-834x625.jpg"
+          />
+          <div class="campaign-header">
+            <div class="campaign-title">
+              <h3>
+                <strong>3 magasiner</strong> <br />
+                +Sports-bh fra Diadora
+              </h3>
+            </div>
+            <div class="campaign-offer">
+              <p>
+                149kr. <br />
+                <small> +porto 49,50 kr.</small>
+              </p>
+            </div>
           </div>
-          <div class="campaign-offer">
-            <p>
-              149kr. <br />
-              <small> +porto 49,50 kr.</small>
-            </p>
+          <div class="campaign-buy">
+            <h5>Spar 660 kr.!</h5>
+            <button>Laes mere</button>
           </div>
-        </div>
-        <div class="campaign-buy">
-          <h5>Spar 660 kr.!</h5>
-          <button>Laes mere</button>
-        </div>
-      </section>
-      <!--Third other offer-->
-      <section class="campaign-wrapper">
-        <img
-          class="campaign-image"
-          src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2019/07/1341_ifo_web_activefit_tre2949caningspakke_slider_1_dk1-834x625.jpg"
-        />
-        <div class="campaign-header">
-          <div class="campaign-title">
-            <h3>
-              <strong>4 magasiner</strong> <br />
-              +Komplet traeningspakke
-            </h3>
+        </section>
+        <!--Third other offer-->
+        <section class="campaign-wrapper">
+          <img
+            class="campaign-image"
+            src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2019/07/1341_ifo_web_activefit_tre2949caningspakke_slider_1_dk1-834x625.jpg"
+          />
+          <div class="campaign-header">
+            <div class="campaign-title">
+              <h3>
+                <strong>4 magasiner</strong> <br />
+                +Komplet traeningspakke
+              </h3>
+            </div>
+            <div class="campaign-offer">
+              <p>
+                149kr. <br />
+                <small> +porto 49,50 kr.</small>
+              </p>
+            </div>
           </div>
-          <div class="campaign-offer">
-            <p>
-              149kr. <br />
-              <small> +porto 49,50 kr.</small>
-            </p>
+          <div class="campaign-buy">
+            <h5>Spar 660 kr.!</h5>
+            <button>Laes mere</button>
           </div>
-        </div>
-        <div class="campaign-buy">
-          <h5>Spar 660 kr.!</h5>
-          <button>Laes mere</button>
-        </div>
-        <!--See all offers button-->
-        <!--TO DO: SEE ALL OFFERS-->
-      </section>
+          <!--See all offers button-->
+          <!--TO DO: SEE ALL OFFERS-->
+        </section>
+      </div>
     </div>
 
     <!--What you get in iFORM area-->
     <section class="what-you-get">
       <div class="what-you-get-text">
-        <h5>
+        <p>
           Føles det som en sur pligt at skulle leve sundt? Den følelse kender vi
           godt – men vi vil frygteligt gerne hjælpe dig af med den!
-        </h5>
+        </p>
         <h4><strong>I hvert nummer af I FORM får du:</strong></h4>
         <ol class="what-you-get-list">
           <li>
@@ -419,9 +416,6 @@
             Spar altid op til 75 %
           </li>
         </ol>
-        <img
-          src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2017/03/584_moreshop_slidersillede_1140x1080-1-660x625.jpg"
-        />
         <p>
           MoreShop er din fordelsshop som abonnent på I FORM, hvor du får adgang
           til eksklusive rabatter og tilbud. Abonnenter shopper til særlige
@@ -431,65 +425,127 @@
           værktøj.
         </p>
       </div>
+      <img
+        src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2017/03/584_moreshop_slidersillede_1140x1080-1-660x625.jpg"
+      />
     </section>
 
     <!--Reviews area-->
-    <section class="reviews">
-      <div class="slide-wrap">
-        <div class="slideshow">
-          <div class="slide-entry">
-            <div class="slide-content">
-              <h2>Slide One</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-                repudiandae magnam amet architecto, aliquam unde, fugit in
-                optio, vitae natus debitis minima tempore adipisci placeat<br /><br />
-                esse quasi ullam incidunt a et sit suscipit, impedit nobis. Quos
-                qui doloribus necessitatibus perspiciatis, aliquid obcaecati
-                rerum ad sequi animi facilis at iusto optio!
-              </p>
-            </div>
-          </div>
-
-          <div class="slide-entry">
-            <div class="slide-content">
-              <h2>Slide One</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-                repudiandae magnam amet architecto, aliquam unde, fugit in
-                optio, vitae natus debitis minima tempore adipisci placeat<br /><br />
-                esse quasi ullam incidunt a et sit suscipit, impedit nobis. Quos
-                qui doloribus necessitatibus perspiciatis, aliquid obcaecati
-                rerum ad sequi animi facilis at iusto optio!
-              </p>
-            </div>
-          </div>
-
-          <div class="slide-entry">
-            <div class="slide-content">
-              <h2>Mixed Content</h2>
-              <img
-                style="float:right"
-                src="https://via.placeholder.com/350x150"
-                alt=""
-              />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-                repudiandae magnam amet architecto, aliquam unde, fugit in
-                optio, vitae natus debitis minima tempore adipisci placeat esse
-                quasi ullam incidunt a et sit suscipit, impedit nobis.
-              </p>
-            </div>
+    <div class="reviews-slideshow-container">
+      <div class="mySlides">
+        <h2>Det siger læserne</h2>
+        <p>
+          <i class="fa fa-quote-right"> </i>
+          Masser af inspiration og gode træningstips til os "almindelige"
+          motionister, man behøver ikke være topatlet for at få udbytte. Masser
+          af inspiration og gode træningstips til os "almindelige" motionister,
+          man behøver ikke være topatlet for at få udbytte.<i
+            class="fa fa-quote-right"
+          ></i>
+        </p>
+        <h4>Lotte Velling</h4>
+        <div class="rating">
+          <div class="all-stars">
+            <span class="stars-orange">★★★★</span
+            ><span class="half"
+              ><div>★</div>
+              <div>★</div>
+            </span>
           </div>
         </div>
-        <ul class="slide-nav">
-          <li id="prev-slide"><i class="fas fa-chevron-left"></i></li>
-          <li id="next-slide"><i class="fas fa-chevron-right"></i></li>
-        </ul>
       </div>
-    </section>
 
-    <footer>
+      <div class="mySlides">
+        <h2>Det siger læserne</h2>
+        <p>
+          <i class="fa fa-quote-right"> </i>
+          Inspiration til træning, tøjkøb og god god inspiration til sund mad.
+          <i class="fa fa-quote-right"></i>
+        </p>
+        <h4>Mette Schilling Schmidt</h4>
+        <div class="rating">
+          <div class="all-stars">
+            <span class="stars-orange">★★★★</span
+            ><span class="half"
+              ><div>★</div>
+              <div>★</div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <h2>Det siger læserne</h2>
+
+        <p>
+          <i class="fa fa-quote-right"> </i>
+          Inspiration til andre sportsaktiviteter, gode madopskrifter, sidste
+          nyt på sportstøjet. Sundhed i sin helhed.
+          <i class="fa fa-quote-right"></i>
+        </p>
+        <h4>
+          Judy Pedersen
+        </h4>
+        <div class="rating">
+          <div class="all-stars">
+            <span class="stars-orange">★★★★</span
+            ><span class="half"
+              ><div>★</div>
+              <div>★</div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <h2>Det siger læserne</h2>
+
+        <p>
+          <i class="fa fa-quote-right"> </i>
+          Gode artikler, gode opskrifter og allermest gode træningsprogrammer.
+          <i class="fa fa-quote-right"></i>
+        </p>
+        <h4>
+          Tove Lauridsen
+        </h4>
+        <div class="rating">
+          <div class="all-stars">
+            <span class="stars-orange">★★★★</span
+            ><span class="half"
+              ><div>★</div>
+              <div>★</div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <h2>Det siger læserne</h2>
+
+        <p>
+          <i class="fa fa-quote-right"> </i>
+          Et rigtigt godt magasin, hvor der hele tiden er gode artikler, med
+          nyheder indenfor sundhed og motion.
+          <i class="fa fa-quote-right"></i>
+        </p>
+        <h4>
+          Merete Andersen
+        </h4>
+        <div class="rating">
+          <div class="all-stars">
+            <span class="stars-orange">★★★★</span
+            ><span class="half"
+              ><div>★</div>
+              <div>★</div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <a class="prev" id="prevReview">❮</a>
+      <a class="next" id="nextReview">❯</a>
+    </div>
+
+    <footer class="footer">
       <div class="publications-international">
         <p>
           Kundeservice postboks 413 <br />

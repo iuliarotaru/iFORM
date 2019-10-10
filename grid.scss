@@ -1,4 +1,5 @@
 @media only screen and (min-width: 768px) {
+  /*--Style jacket campaign --*/
   .jacket-campaign {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,6 +24,51 @@
   .buy {
     grid-column: 2/3;
     grid-row: 4/5;
+    width: 50%;
+    float: right;
+  }
+  .about-jacket {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .text-side {
+    grid-column: 1/2;
+  }
+  .video {
+    grid-column: 2/3;
+    margin: 20px;
+  }
+  .sections-offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+    grid-gap: 2em;
+  }
+  .what-you-get {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .benefit-shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .benefit-text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .benefit-shop img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 2em;
+  }
+  .site-promises > li {
+    padding: 20px;
   }
 }
 @media only screen and (min-width: 1170px) {

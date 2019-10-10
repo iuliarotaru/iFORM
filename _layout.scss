@@ -4,11 +4,17 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
   background-color: #e9e8e8;
 }
+
+p, li {
+  font-family: "GT Walsheim Regular";
+}
+
 // styling checkout footer
 
 @font-face {
@@ -30,7 +36,13 @@ body {
   display: none;
 }
 
-.info_wrapper {
+.headerWrapper {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 1em;
+}
+
+.info_wrapper, .bodyWrapper {
   margin: auto;
   overflow: hidden;
   max-width: 600px;

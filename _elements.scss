@@ -4,6 +4,10 @@ a {
   transition: color 0.3s ease;
 }
 
+.jacket-campaign-header > h1 {
+  margin-bottom: 0;
+}
+
 .slider-wrapper {
   overflow: hidden;
   width: 100%;
@@ -100,9 +104,28 @@ a {
 }
 
 /*--Style additional information area--*/
-ol {
+.site-promises {
   list-style-type: none;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: .5em;
+}
+
+.site-promises > li {
+  list-style-type: none;
+ }
+ 
+ .site-promises > li:before {
+   content: "";
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: url("images/checked-icon.png");
+   object-fit: contain;
+   background-size: contain;
+   margin-bottom: -3px;
 }
 
 /*--Style rating stars--*/
@@ -130,6 +153,41 @@ ol {
   margin-left: -12px;
 }
 
+.jacket-campaign {
+  background-color: #e9e8e8;
+  padding: 1em;
+}
+
+.additional-info {
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+
+.additional-info > li:before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("images/red-check.png");
+  background-size: contain;
+  margin-bottom: -2px;
+}
+
+.about-jacket-information {
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+
+.about-jacket-information > li:before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("images/checked-green.png");
+  background-size: contain;
+  margin-bottom: -2px;
+}
+
 /*--Other offers style--*/
 .campaign-image:hover {
   opacity: 0.75;
@@ -139,6 +197,8 @@ ol {
   transition: all 0.86s cubic-bezier(0.215, 0.61, 0.355, 1);
   width: 100%;
 }
+
+
 
 h1,
 h2,
@@ -161,10 +221,6 @@ h3 {
 a {
   color: #5c1182;
   text-decoration: underline;
-  font-family: "GT Walsheim Regular";
-}
-
-p {
   font-family: "GT Walsheim Regular";
 }
 

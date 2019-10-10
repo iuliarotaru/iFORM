@@ -10,9 +10,9 @@
     <script src="https://kea-alt-del.dk/iform/login.js"></script>
   </head>
   <body>
-    <header>
       <!--Navigation area-->
-
+<div class="bodyWrapper">
+  <div class="headerWrapper">
       <nav id="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -34,26 +34,16 @@
       <div class="logo">
         <img src="images/logo.png" alt="logo" id="logo" />
       </div>
-    </header>
+</div>
     <!--Site Promises area-->
-    <ol class="site-promises">
+    <ul class="site-promises">
       <li>
-        <img
-          src="images/checked-icon.png"
-          alt="checked icon"
-          id="checkedIcon"
-        />
-        14 days cancellation right
+        14 dages fortrydelsesret
       </li>
       <li>
-        <img
-          src="images/checked-icon.png"
-          alt="checked icon"
-          id="checkedIcon"
-        />
-        No binding
+        Ingen binding
       </li>
-    </ol>
+    </ul>
     <div class="modalBg hide">
       <div class="modalWrapper" id="modalWrapper1">
         <div class="modalHeaderWrapper">
@@ -173,37 +163,37 @@
       </div>
       <!--Price and buy button-->
       <div class="buy">
-        <h4 class="discount1">149 kr.</h4>
+        <h4 class="discount1"><span class="oldPrice"> 960 kr. </span>149 kr.</h4>
         <h4 class="discount2">Spar 761kr.!</h4>
         <button class="buy-now">Bestil nu</button>
-        <p class="delivery-small">
+        <!-- <p class="delivery-small">
           <small>+49,50 kr. i porto og eksp.l alt 198,50 kr.</small>
-        </p>
+        </p> -->
       </div>
       <!--More information-->
-      <ol class="additional-info">
+      <ul class="additional-info">
         <li>
-          <img src="images/red-check.png" />Magasinet rammer din postkasse hver
-          tredje uge - portofrit
+          Magasinet rammer din postkasse hver tredje uge - portofrit
         </li>
         <li>
-          <img src="images/red-check.png" /> Lækker & let fiberjakke fra
-          ActiveFit
+          Lækker & let fiberjakke fra ActiveFit
         </li>
         <li>
-          <img src="images/red-check.png" /> Få store rabatter på træningstøj og
-          udstyr i fordelsklubben ”Moreshop”
+          Få store rabatter på træningstøj og udstyr i fordelsklubben ”Moreshop”
         </li>
         <li>
-          <img src="images/red-check.png" /> Digital udgave af de seneste 12
-          numre af I FORM via app'en WYPE
+         Digital udgave af de seneste 12 numre af I FORM via app'en WYPE
+        </li>
+      </ul>
+      <h2>Hvad sker det, når din introduktionsperiode udløber?</h2>
+      <ul class="additional-info">
+        <li>
+            Efter tilbuddet fortsætter du i løbende abonnement til 77,50 kr. pr. nummer inkl. levering.
         </li>
         <li>
-          <img src="images/red-check.png" /> Du kan opsige dit abonnement når
-          som helst. Efter tilbuddet fortsætter du i løbende abonnement til
-          77,50 kr. pr. nummer inkl. levering.
+            Du kan opsige dit abonnement når som helst.
         </li>
-      </ol>
+      </ul>
       <!--Star rating area-->
       <div class="all-stars">
         <span class="stars-orange">★★★★</span
@@ -217,23 +207,21 @@
     </div>
 
     <!--About the jacket area-->
-    <div class="about-jacket">
+    <div class="mainWrapper">
+      <div class="about-jacket">
       <h2>Lækker & let fiberjakke</h2>
       <h3>– til forår og efterår</h3>
-      <ol class="about-jacket-information">
+      <ul class="about-jacket-information">
         <li>
-          <img src="images/checked-green.png" /> Perfekt til dig, der holder af
-          at være aktiv og nyde livet udendørs
+          Perfekt til dig, der holder af at være aktiv og nyde livet udendørs
         </li>
         <li>
-          <img src="images/checked-green.png" />Behagelig til en rask gåtur, i
-          haven eller som let overtøj i hverdagen
+          Behagelig til en rask gåtur, i haven eller som let overtøj i hverdagen
         </li>
         <li>
-          <img src="images/checked-green.png" />Fungerer godt som et ekstra lag
-          under din regn- eller vindjakke
+          Fungerer godt som et ekstra lag under din regn- eller vindjakke
         </li>
-      </ol>
+      </ul>
       <p><strong>Værdi: 600 kr.</strong></p>
       <p><strong>Læs mere </strong></p>
     </div>
@@ -312,7 +300,8 @@
       <!--See all offers button-->
       <!--TO DO: SEE ALL OFFERS-->
     </section>
-
+    </div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>
